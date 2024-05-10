@@ -1,2 +1,11 @@
 # Docker
-First docker project
+<h1>Проект для получения метрик с помощью Prometheus</h1>
+<p>В проекте развернул в docker-compose следующие приложения:</p>
+<ul>
+  <li>Prometheus</li>
+  <li>Postgresql</li>
+  <li>Node-exporter</li>
+  <li>Grafana</li>
+</ul>
+<p>Дополнительно имеется код на c#, который может работать с таблицей метрик и получать метрики в риалтайме.</p>
+<p>БД инициализируется автоматически с помощью init.sql</p>
