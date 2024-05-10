@@ -1,0 +1,47 @@
+services:
+  postgres:
+    container_name: postgres_container
+    image: postgres:13.3
+    environment:
+      POSTGRES_DB: "prometheus"
+      POSTGRES_USER: "leonid"
+      POSTGRES_PASSWORD: "159372684gG"
+      PGDATA: /data/postgres
+    volumes:
+      - ./initd:/docker-entrypoint-initdb.d/
+      - postgres:/data/postgres
+    ports:
+      - "5432:5432"
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - grafana-configs:/etc/grafana
+  prometheus:
+    image: prom/prometheus:v2.36.0
+    ports:
+      - "9090:9090"
+    volumes:
+      - prom-data:/prometheus
+      - prom-configs:/etc/prometheus
+  node-exporter:
+    image: prom/node-exporter:v1.3.1
+    ports:
+      - "9100:9100"
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+    command:
+      - '--path.procfs=/host/proc'
+      - '--path.sysfs=/host/sys'
+      - '--collector.filesystem.mount-points-exclude'
+
+volumes:
+  postgres:
+  grafana-data:
+  grafana-configs:
+  prom-data:
+  prom-configs:
