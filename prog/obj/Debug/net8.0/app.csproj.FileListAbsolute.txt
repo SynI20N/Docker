@@ -38,3 +38,4 @@
 /home/leonid/Projects/Docker/prog/obj/Debug/net8.0/app.pdb
 /home/leonid/Projects/Docker/prog/obj/Debug/net8.0/app.genruntimeconfig.cache
 /home/leonid/Projects/Docker/prog/obj/Debug/net8.0/ref/app.dll
+/home/leonid/Projects/Docker/prog/obj/Debug/net8.0/app.sourcelink.json
