@@ -43,13 +43,24 @@ namespace MyApp
         {
             try
             {
-                var path = new[] { "data", "result", "0", "value", "1" };
+                var path = new[] { "data", "result", "index-0", "value", "index-1" };
 
                 JsonNode current = json;
 
                 foreach (var key in path)
                 {
-                    current = current[key];  // Traverse the JsonObject using the same path
+                    string[] parts = key.Split('-');
+                    if(parts.Length == 2)
+                    {
+                        if (Int32.TryParse(parts[1], out int result))
+                        {
+                            current = current[result];
+                        }
+                    }
+                    else 
+                    {
+                        current = current[key];
+                    }
                 }
 
                 return current?.ToString() ?? "null";

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nLDQ6xK0XE6BYK3THs+YJmwCuvYkFU/jVjEhSKNzpLbHso+uq/sXJk3eSbxqUelUbM7i9lmP2Cy/C0e2XJJU1g==",
+  "dgSpecHash": "O/NX/IRXRREOl/0yqjRc8dcnsPByz8VO0nLwIwmiEehYJmz+Cf01BcoPmvoNDZVx33bprVVtMMHGSeliElBoCg==",
   "success": true,
   "projectFilePath": "/home/leonid/Projects/Docker/prog/app.csproj",
   "expectedPackageFiles": [
@@ -30,7 +30,8 @@
     "/home/leonid/.nuget/packages/npgsql.entityframeworkcore.postgresql/8.0.2/npgsql.entityframeworkcore.postgresql.8.0.2.nupkg.sha512",
     "/home/leonid/.nuget/packages/prometheus-net/8.2.1/prometheus-net.8.2.1.nupkg.sha512",
     "/home/leonid/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
-    "/home/leonid/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512"
+    "/home/leonid/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512",
+    "/home/leonid/.nuget/packages/yamldotnet/15.1.2/yamldotnet.15.1.2.nupkg.sha512"
   ],
   "logs": []
 }

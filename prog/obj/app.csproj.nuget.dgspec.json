@@ -59,6 +59,10 @@
               "target": "Package",
               "version": "[8.0.2, )"
             },
+            "YamlDotNet": {
+              "target": "Package",
+              "version": "[15.1.2, )"
+            },
             "prometheus-net": {
               "target": "Package",
               "version": "[8.2.1, )"
